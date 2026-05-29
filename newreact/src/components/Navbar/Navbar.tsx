@@ -6,16 +6,16 @@ import { IoMdClose } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
 
 import { Logo } from "../../image";
-import { navlinks } from "../../constant/Navlinks";
 import Darkmode from "../Darkmode";
 import ResponsiveMenu from "../ResponsiveMenu";
+import { navlinks } from "../../constant/Navlinks";
 const Navbar = () => {
   const [showMenu, setMenu] = useState(false);
   const handelMenuToggle = ()=> setMenu(!showMenu);
   return (
     <div>
     <div className="bg-primary">
-        <div className="hidden md:flex justify-between  items-center">
+        <div className=" container hidden md:flex justify-between  items-center">
         <div className="flex items-center gap-3">
           <FaPhoneAlt />
           <span>+977-9852656</span>
@@ -27,8 +27,9 @@ const Navbar = () => {
       </div>
     </div>
 
-      <div className="flex justify-between dark:bg-black dark:text-white ">
-        <div>
+      <div className="  dark:bg-black dark:text-white">
+      <div className=" container flex justify-between ">
+          <div>
           <img src={Logo} alt="logo" className="h-16 w-16" />
         </div>
 
@@ -52,6 +53,7 @@ const Navbar = () => {
     <CiMenuBurger onClick={handelMenuToggle} className="text-2xl"/>
   )}
 </div>
+      </div>
 
       </div>
       <ResponsiveMenu showMenu={showMenu}/>

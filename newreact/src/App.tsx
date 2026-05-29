@@ -75,7 +75,8 @@
 // };
 
 // 
-import Hero from "./components/hero"
+
+import HeroSection from "./components/HeroSection/Herosection"
 import Navbar from "./components/Navbar/Navbar"
 
 
@@ -83,7 +84,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero/>
+      <HeroSection/>
     </div>
   )
 }

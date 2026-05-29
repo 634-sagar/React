@@ -1,7 +1,6 @@
-
-
 import { navlinks } from "../constant/Navlinks"
 import { Logo } from "../image"
+
 
 type ResponsiveMenuProps = {
     showMenu: boolean

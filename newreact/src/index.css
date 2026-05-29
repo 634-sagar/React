@@ -7,8 +7,17 @@
 }
 
 @layer components{
+    .container{
+        @apply max-w-6xl mx-auto px-5 
+    }
 
     .primary-btn{
-        @apply bg-primary rounded-xl font-semibold px-5 py-2 capitalize hover:bg-orange-700
+        @apply bg-primary rounded-md font-semibold px-5 py-2 capitalize hover:bg-orange-700 duration-500
+    }
+    .secondary-btn{
+        @apply px-5 py-2 border-2 border-white text-white rounded-md hover:bg-white hover:text-black duration-500
+    }
+    .section-btn{
+        @apply bg-primary px-9 py-2 rounded-full text-lg text-white
     }
 }
