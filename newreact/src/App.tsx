@@ -76,7 +76,9 @@
 
 // 
 
-import HeroSection from "./components/HeroSection/Herosection"
+import FeatureSection from "./components/FeatureSection/FeatureSection"
+import Footer from "./components/Footer/Footer"
+import HeroSection from "./components/HeroSection/HeroSection"
 import Navbar from "./components/Navbar/Navbar"
 
 
@@ -85,6 +87,9 @@ const App = () => {
     <div>
       <Navbar />
       <HeroSection/>
+      <FeatureSection/>
+      <Footer/>
+      
     </div>
   )
 }
