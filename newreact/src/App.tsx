@@ -77,6 +77,7 @@
 // 
 
 
+import { Service } from "./components"
 import Feature from "./components/Feature/Feature"
 import Footer from "./components/Footer/Footer"
 import HeroSection from "./components/HeroSection/HeroSection"
@@ -89,6 +90,7 @@ const App = () => {
       <Navbar />
       <HeroSection/>
       <Feature/>
+      <Service/>
       <Footer/>
       
     </div>
