@@ -120,10 +120,7 @@ const Footer = () => {
             <li>
               <a
                 href="mailto:shop@fashionstore.com"
-                className="hover:text-sky-400 transition-colors duration-200"
-              >
-                shop@fashionstore.com
-              </a>
+                className="hover:text-sky-400 transition-colors duration-200">shop@fashionstore.com</a>
             </li>
             <li>Sun-Fri: 10AM - 8PM</li>
           </ul>

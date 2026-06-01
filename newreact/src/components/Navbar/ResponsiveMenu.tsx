@@ -1,5 +1,5 @@
-import { navlinks } from "../constant/Navlinks"
-import { Logo } from "../image"
+import { navlinks } from "../../constant/Navlinks"
+import { Logo } from "../../image"
 
 
 type ResponsiveMenuProps = {

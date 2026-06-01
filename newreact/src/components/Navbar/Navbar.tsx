@@ -6,8 +6,8 @@ import { IoMdClose } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
 
 import { Logo } from "../../image";
-import Darkmode from "../Darkmode";
-import ResponsiveMenu from "../ResponsiveMenu";
+import Darkmode from "./Darkmode";
+import ResponsiveMenu from "./ResponsiveMenu";
 import { navlinks } from "../../constant/Navlinks";
 const Navbar = () => {
   const [showMenu, setMenu] = useState(false);
