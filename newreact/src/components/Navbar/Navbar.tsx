@@ -13,8 +13,8 @@ const Navbar = () => {
   const [showMenu, setMenu] = useState(false);
   const handelMenuToggle = ()=> setMenu(!showMenu);
   return (
-    <div>
-    <div className="bg-primary">
+    <div className="fixed top-0 left-0 w-full z-50">
+    <div className="bg-primary ">
         <div className=" container hidden md:flex justify-between  items-center">
         <div className="flex items-center gap-3">
           <FaPhoneAlt />

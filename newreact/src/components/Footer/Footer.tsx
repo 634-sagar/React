@@ -8,6 +8,8 @@ import {
 import { Logo } from "../../image";
 
 const Footer = () => {
+  
+  const currentYear = new Date().getFullYear();
   const socialLinks = [
     {
       icon: FaSquareInstagram,
