@@ -130,7 +130,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-        <p>&copy; 2026 Fashion Store. All rights reserved.</p>
+        <p>&copy; {currentYear} Fashion Store. All rights reserved.</p>
       </div>
     </footer>
   );
