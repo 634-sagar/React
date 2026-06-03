@@ -1,20 +1,18 @@
 import { FaPhoneAlt } from "react-icons/fa";
 
-
+import { Navlink } from "../../constant/Navlinks";
+import Darkmode from "./Darkmode";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
-
-import { Logo } from "../../image";
-import Darkmode from "./Darkmode";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { navlinks } from "../../constant/Navlinks";
+import { Logo } from "../../image";
 const Navbar = () => {
   const [showMenu, setMenu] = useState(false);
   const handelMenuToggle = ()=> setMenu(!showMenu);
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
-    <div className="bg-primary ">
+    <div className="sticky top-0 z-50">
+    <div className="bg-primary">
         <div className=" container hidden md:flex justify-between  items-center">
         <div className="flex items-center gap-3">
           <FaPhoneAlt />
@@ -35,7 +33,7 @@ const Navbar = () => {
 
         <div className="">
           <ul className="hidden md:flex items-center gap-3 font-semibold h-full">
-            {navlinks.map((item) => (
+            {Navlink.map((item) => (
               <li key={item.id}>
                 <a href={item.path}>{item.name}</a>
               </li>

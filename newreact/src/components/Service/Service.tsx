@@ -1,4 +1,3 @@
-import React from 'react'
 import { Services } from '../../constant/Service'
 
 const Service = () => {
@@ -26,7 +25,7 @@ const Service = () => {
 
                             <ul className='space-y-2'>
                                 {item.description.map((des, index) => (
-                                    <li key={index} className='flex items-center gap-2 md:gap-3 dark:text-white'>
+                                    <li key={index} className='hidden lg:flex items-center gap-2 md:gap-3 dark:text-white'>
                                         
                                         <span className='h-5 w-5 bg-primary/10 flex items-center justify-center rounded-full'>
                                         <span className='h-1.5 w-1.5 bg-primary rounded-full'></span>

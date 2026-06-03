@@ -77,22 +77,29 @@
 // 
 
 
-import { Service } from "./components"
-import Feature from "./components/Feature/Feature"
+import { Route, Routes } from "react-router"
+import { Contact, Featrure, HeroSection, Navbar, Service } from "./components"
+import { LoginPage } from "./page"
 import Footer from "./components/Footer/Footer"
-import HeroSection from "./components/HeroSection/HeroSection"
-import Navbar from "./components/Navbar/Navbar"
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+ <Routes>
+  <Route path="/" element = {
+    <>
+         <Navbar />
       <HeroSection/>
-      <Feature/>
+      <Featrure/>
       <Service/>
+      <Contact/>
       <Footer/>
-      
+    </>
+  }/>
+<Route path="contact" element={<Contact/>}/>
+  <Route path="login" element={<LoginPage/>}/>
+ </Routes>
     </div>
   )
 }

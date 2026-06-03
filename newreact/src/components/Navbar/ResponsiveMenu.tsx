@@ -1,4 +1,4 @@
-import { navlinks } from "../../constant/Navlinks"
+import { Navlink, } from "../../constant/Navlinks"
 import { Logo } from "../../image"
 
 
@@ -18,7 +18,7 @@ const ResponsiveMenu = ({ showMenu }: ResponsiveMenuProps) => {
 
             <div>
                 <ul className="flex flex-col gap-4">
-                    {navlinks.map((data) => (
+                    {Navlink.map((data) => (
                         <li key={data.id} className="text-xl font-semibold border-b border-gray-100
                         dark:border-gray-800 hover:text-primary">
                             <a href={data.path}>{data.name}</a>
